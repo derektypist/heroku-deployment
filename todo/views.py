@@ -29,8 +29,4 @@ def edit_an_item(request, id):
     else:
         form = ItemForm(instance=item)    
         
-        
-    form = ItemForm(instance=item)
-    
-    
     return render(request, "item_form.html", {'form': form})
